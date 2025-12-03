@@ -1,0 +1,191 @@
+/* ===== Root tokens ===== */
+:root {
+  --ff-primary: "Cairo", sans-serif;
+
+  --clr-background: #F5F5F5;
+  --clr-white: #F1FCDE;
+  --clr-black: #090E01;
+  --clr-light-green: #DEF8AF;
+  --clr-medium-green: #88CC11;
+  --clr-dark-green: #456809;
+  --clr-green-ecology: #018d34;
+
+  --spacing: 0.25rem;
+  --transition: all 0.3s ease;
+  --shadow: 0 .3rem 1.1rem rgba(0, 0, 0, 0.06);
+}
+
+/* ===== Navbar ===== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  background-color: var(--clr-background);
+
+  padding-block: 1.2rem;     /* espaçamento vertical */
+  padding-inline: 0;         /* elimina qualquer margem lateral */
+
+  box-shadow: var(--shadow);
+  z-index: 10;
+}
+
+/* Container interno */
+.header_nav {
+  max-width: 1280px;         /* largura máxima elegante */
+  margin: 0 auto;            /* centraliza o conteúdo */
+  padding-inline: 2rem;      /* espaçamento interno horizontal */
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_nav img {
+  width: 140px;
+  height: auto;
+}
+
+/* ===== Hamburguer ===== */
+.hamburguer {
+  display: none;
+}
+
+/* ===== Menu ===== */
+.header_nav__menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header_nav__menu li {  
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--clr-black);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+/* remove estilos do link mas mantém acessibilidade */
+.header_nav__menu li a {
+  all: unset;
+}
+
+/* hover minimalista */
+.header_nav__menu li:hover {
+  color: var(--clr-green-ecology);
+}
+
+/* ===== Botão para desktop ===== */
+.btnDesktop {
+  all: unset;
+
+  background-color: var(--clr-green-ecology);
+  color: var(--clr-white);
+  padding: .8rem 1.4rem;
+
+  border-radius: .6rem;
+  font-size: 1.6rem;
+  font-weight: 900;
+
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.btnDesktop:hover {
+  opacity: 0.85;
+}
+
+/* ==== Botao para mobile ==== */
+
+.btnMobile{
+    display: none;
+}
+
+/* ========================================== */
+/* MOBILE VERSION — ATIVADA NO <= 768px */
+/* ========================================== */
+@media (max-width: 768px) {
+
+  /* hamburger aparece */
+  .hamburguer {
+    display: flex;
+    width: 30px;
+    height: 22px;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 200;
+  }
+
+  .hamburguer span {
+    height: 4px;
+    width: 100%;
+    background: var(--clr-green-ecology);
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+
+  /* ícone vira X */
+  .hamburguer_open span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  .hamburguer_open span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburguer_open span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  /* menu vira drawer lateral */
+  .header_nav__menu {
+    position: absolute;
+    top: 0;
+    right: -100%;
+
+    height: 100vh;
+    width: 70%;
+    padding-top: 100px;
+
+    flex-direction: column;
+    background: var(--clr-background);
+    gap: 30px;
+
+    transition: 0.3s;
+    z-index: 150;
+  }
+
+  /* estado aberto */
+  .open {
+    right: 0;
+  }
+
+  /* botao */
+    .btnDesktop {
+        display: none;
+    }
+
+    .btnMobile{
+        display: block;
+    }
+
+    .btnMobile button {
+    all: unset;
+    background-color: var(--clr-green-ecology);
+    color: var(--clr-white);
+    padding: .6rem .8rem;
+    text-align: center;
+    border-radius: .6rem;
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 900;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+}
