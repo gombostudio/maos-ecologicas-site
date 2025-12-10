@@ -1,6 +1,7 @@
+import { IconDefinition } from '@fortawesome/fontawesome-common-types'; 
 export interface propsTypes {
-
-    text?: string;
-    onClick: ()=> void;
-
+  Title: string;
+  textBody: string;
+  Icon: IconDefinition;
+  onClick?: () => void; 
 }

@@ -1,0 +1,182 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modalHeader {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.modalTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+.closeButton:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.modalBody {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 80px;
+}
+
+.galleryImage {
+  max-width: 100%;
+  max-height: calc(100vh - 200px);
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.navButton {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  z-index: 10;
+}
+
+.navButton:hover {
+  background: white;
+  transform: scale(1.1);
+}
+
+.navButton:active {
+  transform: scale(0.95);
+}
+
+.prevButton {
+  left: 20px;
+}
+
+.nextButton {
+  right: 20px;
+}
+
+.modalFooter {
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.imageCounter {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.modalInfo {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.modalInfoItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ccc;
+}
+
+.description {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .modalBody {
+    padding: 0 60px;
+  }
+
+  .navButton {
+    width: 40px;
+    height: 40px;
+  }
+
+  .prevButton {
+    left: 10px;
+  }
+
+  .nextButton {
+    right: 10px;
+  }
+
+  .modalHeader {
+    padding: 15px;
+  }
+
+  .modalTitle {
+    font-size: 1.2rem;
+  }
+
+  .modalFooter {
+    padding: 15px;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .modalBody {
+    padding: 0 50px;
+  }
+
+  .navButton {
+    width: 35px;
+    height: 35px;
+  }
+
+  .modalInfo {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+}

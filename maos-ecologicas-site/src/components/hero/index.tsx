@@ -16,10 +16,10 @@ const Hero = () => {
         <p>
           Mãos Ecológicas: unidos no trabalho,
           firmes pela sustentabilidade,
-          <span>fazemos nascer um futuro de oportunidade.</span>
+          <span>fazemos nascer um futuro de oportunidades.</span>
         </p>
 
-        <button>Comunidade</button>
+        <button>Comunidade</button>*
       </div>
     </div>
   );

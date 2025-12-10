@@ -1,0 +1,92 @@
+:root {
+	--ff-primary: "Cairo", sans-serif;
+	
+	--clr-background: 	#F5F5F5;
+	--clr-white: 		#F1FCDE;
+	--clr-black: 		#090E01;
+	--clr-light-green: 	#DEF8AF;
+	--clr-medium-green: #88CC11;
+	--clr-dark-green: 	#456809;
+	--clr-gree-ecology: #018d34;
+	
+	--spacing: 0.25rem;
+	--transition: all 0.2s linear;
+	--dark-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+
+
+.quemSomos{
+  opacity: 0;
+  animation: fadeIn 5s forwards; 
+  width: 100%;
+  margin: 4rem 0rem;
+  padding-block: 1.2rem; 
+  padding-inline: 0; 
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;   
+}
+
+ @keyframes fadeIn {
+   to {
+     opacity: 1;
+   }
+}
+
+.texts{
+  max-width: 1280px;        
+  margin: 0 auto;            
+  padding-inline: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column
+}
+
+.texts h1{
+    font-size: 3.6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+  
+
+.texts h1 span{
+    color: var(--clr-gree-ecology);
+}
+
+.texts p span{
+    display: block; 
+}
+
+.image{       
+  display: flex;
+  justify-content: center;            
+  padding-inline: 2rem;
+}
+
+.image img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+   
+
+.cards{
+    max-width: 1280px;        
+    margin: 0 auto;            
+    padding-inline: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+@media(max-width: 1280px){
+    .cards{
+        flex-direction: column;
+    }
+
+    .texts p span{
+        display: inline;
+    }
+    
+}
