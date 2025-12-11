@@ -9,7 +9,7 @@ const Navbar = () => {
 
     const links = [
         { name: "Quem Somos", href: "#quemsomos" },
-        { name: "Diferenciais", href: "#diferenciais" },
+        { name: "Parceiros", href: "#parceiros" },
         { name: "Galeria", href: "#galeria" },
         { name: "Eventos", href: "#eventos" },
     ];
