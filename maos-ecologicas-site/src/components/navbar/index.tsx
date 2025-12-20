@@ -1,4 +1,4 @@
-import { use, useState } from 'react';
+import { useState } from 'react';
 import '../../styles/global.css';
 import style from './style.module.css';
 
@@ -9,9 +9,9 @@ const Navbar = () => {
 
     const links = [
         { name: "Quem Somos", href: "#quemsomos" },
-        { name: "Parceiros", href: "#parceiros" },
+        { name: "Artigos", href: "#artigos" },
         { name: "Galeria", href: "#galeria" },
-        { name: "Eventos", href: "#eventos" },
+        { name: "Impacto", href: "#impacto" },
     ];
 
   return (
@@ -20,7 +20,7 @@ const Navbar = () => {
     <div className={style.header}>
         <div className={style.header_nav}>
 
-            <img src="src/assets/img/fgr.png" alt="logo" />
+            <img src="/img/fgr.png" alt="logo" />
 
             <div onClick={()=>{setOpen(!open)}} className={`${style.hamburguer} ${open ? style.hamburguer_open : ''}`}>
                 <span></span>

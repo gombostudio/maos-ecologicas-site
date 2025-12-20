@@ -2,8 +2,9 @@ import {useEffect} from 'react'
 import Layout from './layouts/layout'
 import Hero from './components/hero'
 import QuemSomos from './components/quemsomos'
-import Card from './components/galeria/card'
-import { eventsData } from './data/eventdata';
+import Parceiros from './components/parceiros'
+import UsoGeral from './components/usoGeral'
+import Index from './components/estatisticas'
 import './styles/global.css'
 
 function App() {
@@ -18,11 +19,9 @@ function App() {
      <Layout>
       <Hero/>
       <QuemSomos/>
-      <div className="gallery-grid">
-        {eventsData.map((event) => (
-          <Card key={event.id} event={event}/>
-        ))}
-      </div>
+      <Parceiros/>
+      <UsoGeral/>
+      <Index/>  
      </Layout>
     </>
   )

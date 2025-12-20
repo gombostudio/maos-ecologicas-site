@@ -1,4 +1,4 @@
-import videoBlog from '../../assets/video/mixkit-very-close-shot-of-the-leaves-of-a-tree-wet-18310-medium.mp4';
+import videoBlog from '/video/video-blog.mp4';
 import style from './style.module.css';
 
 const Hero = () => {

@@ -1,0 +1,76 @@
+:root {
+	--ff-primary: "Cairo", sans-serif;
+	
+	--clr-background: 	#F5F5F5;
+	--clr-white: 		#F1FCDE;
+	--clr-black: 		#090E01;
+	--clr-light-green: 	#DEF8AF;
+	--clr-medium-green: #88CC11;
+	--clr-dark-green: 	#456809;
+	--clr-gree-ecology: #018d34;
+	
+	--spacing: 0.25rem;
+	--transition: all 0.2s linear;
+	--dark-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.2);
+}   
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.marquee h1 {
+  text-transform: uppercase;
+  font-size: 3.6rem;
+  padding: 0 2rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.marquee h1 span {
+  color: var(--clr-gree-ecology);
+}
+
+.track {
+  display: flex;
+  width: calc(200%); /* 2x porque duplicamos as imagens */
+  animation: scroll 18s linear infinite;
+  gap: 20px;
+}
+
+.item {
+  flex-shrink: 0;
+}
+
+.logo {
+  height: 80px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .marquee h1 {
+    font-size: 2.4rem;
+  }
+
+  .logo {
+    height: 60px;
+  }
+}

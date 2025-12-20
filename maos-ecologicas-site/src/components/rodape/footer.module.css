@@ -1,0 +1,282 @@
+:root {
+	--ff-primary: "Cairo", sans-serif;
+	
+	--clr-background: 	#F5F5F5;
+	--clr-white: 		#F1FCDE;
+	--clr-black: 		#090E01;
+	--clr-light-green: 	#DEF8AF;
+	--clr-medium-green: #88CC11;
+	--clr-dark-green: 	#456809;
+	--clr-gree-ecology: #018d34;
+	
+	--spacing: 0.25rem;
+	--transition: all 0.2s linear;
+	--dark-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  background-color: var(--clr-gree-ecology);
+  padding: 80px 20px 40px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.topSection {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 80px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.664);
+}
+
+/* Newsletter Section */
+.newsletter {
+  max-width: 350px;
+  color: var(--clr-white);
+}
+
+.newsletterTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0 0 16px 0;
+
+}
+
+.newsletterText {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0 0 24px 0;
+}
+
+/*.subscribeButton {
+  background-color: #c6f432;
+  color: #1a202c;
+  border: none;
+  padding: 12px 28px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.subscribeButton:hover {
+  background-color: #b5e320;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(198, 244, 50, 0.3);
+}
+
+.subscribeButton:active {
+  transform: translateY(0);
+}*
+
+/* Links Grid */
+.linksGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.linkSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.linkTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--clr-medium-green);
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: var(--clr-white);
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: var(--clr-medium-green);
+}
+
+/* Bottom Section */
+.bottomSection {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 30px;
+  padding-top: 30px;
+}
+
+.copyright {
+  font-size: 1.1rem;
+  color: var(--clr-white);
+}
+
+.bottomLinks {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.bottomLink {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: var(--clr-white);
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.bottomLink:hover {
+  color: var(--clr-medium-green);
+}
+
+.socialLinks {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--clr-medium-green);
+  border-radius: 50%;
+
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.socialLink:hover {
+  background-color: var(--clr-gree-ecology);
+  color: var(--clr-white);
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .topSection {
+    gap: 60px;
+  }
+
+  .linksGrid {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .topSection {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .newsletter {
+    max-width: 100%;
+  }
+
+  .linksGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .bottomSection {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    text-align: center;
+  }
+
+  .bottomLinks {
+    justify-content: center;
+  }
+
+  .socialLinks {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer {
+    padding: 50px 20px 30px;
+  }
+
+  .newsletterTitle {
+    font-size: 1.75rem;
+  }
+
+  .newsletterText {
+    font-size: 0.9rem;
+  }
+
+  .subscribeButton {
+    width: 100%;
+  }
+
+  .linksGrid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .linkList {
+    gap: 10px;
+  }
+
+  .bottomLinks {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .bottomSection {
+    gap: 20px;
+  }
+
+  .copyright {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .newsletterTitle {
+    font-size: 1.5rem;
+  }
+
+  .subscribeButton {
+    padding: 10px 24px;
+    font-size: 0.9rem;
+  }
+
+  .linkTitle {
+    font-size: 0.85rem;
+  }
+
+  .link,
+  .bottomLink {
+    font-size: 0.85rem;
+  }
+
+  .socialLink {
+    width: 36px;
+    height: 36px;
+    font-size: 0.9rem;
+  }
+}
