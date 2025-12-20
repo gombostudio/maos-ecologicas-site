@@ -1,6 +1,7 @@
 .card {
   width: 100%;
-  max-width: 400px;
+  max-width: 350px;
+  border: 1px solid #fff;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -26,10 +27,9 @@
 }
 
 .cardTitle {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
   margin: 0 0 16px 0;
-  color: #1a1a1a;
 }
 
 .cardInfo {
@@ -42,8 +42,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #666;
-  font-size: 0.95rem;
+  font-size: 1.3rem;
 }
 
 .infoItem svg {

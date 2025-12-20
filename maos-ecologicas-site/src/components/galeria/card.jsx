@@ -21,11 +21,11 @@ const Card = ({ event }) => {
           <h2 className={styles.cardTitle}>{event.title}</h2>
           <div className={styles.cardInfo}>
             <div className={styles.infoItem}>
-              <MapPin />
+              <MapPin color='#018d34'/>
               <span>{event.location}</span>
             </div>
             <div className={styles.infoItem}>
-              <Calendar />
+              <Calendar color='#018d34'/>
               <span>{event.date}</span>
             </div>
           </div>

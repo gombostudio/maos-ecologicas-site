@@ -1,5 +1,5 @@
 import style from'./style.module.css'
-import image from '../../assets/img/FGHE5433.JPG'
+import image from '/img/FGHE5433.JPG'
 import Cards from '../cards/cards'
 import { faLeaf, faEye, faHandsHelping } from '@fortawesome/free-solid-svg-icons';
 
