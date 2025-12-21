@@ -4,7 +4,7 @@ export const eventsData = [
     coverImage: '/img/evento1/capa.JPG',
     title: 'Limpeza na Floresta',
     location: 'Ilha de Luanda, Luanda',
-    date: '15 Nov 2022',
+    date: '18 JULH 2022',
     images: [
       '/img/evento1/img1.JPG',
       '/img/evento1/img2.JPG',
@@ -24,7 +24,7 @@ export const eventsData = [
     coverImage: '/img/evento2/capa.JPG',
     title: 'Tarde de educação ambiental - Centro de acolhimento Arnaldo Jhansen',
     location: 'Luanda',
-    date: '17 Nov 2023',
+    date: '23 OUT 2022',
     images: [
       '/img/evento2/img1.JPG',
       '/img/evento2/img2.JPG',
@@ -41,21 +41,21 @@ export const eventsData = [
   },
   {
     id: 3,
-    coverImage: '/img/evento3/capa.jpg',
+    coverImage: '/img/evento3/capa.JPG',
     title: 'Actividade comunitária - Limpeza de praia',
     location: 'Mussulo, Luanda',
-    date: '15 SET 2025',
+    date: '12 ABR 2025',
     images: [
-      '/img/evento3/img1.jpg',
-      '/img/evento3/img2.jpg',
-      '/img/evento3/img3.jpg',
-      '/img/evento3/img4.jpg',
-      '/img/evento3/img5.jpg',
-      '/img/evento3/img6.jpg',
-      '/img/evento3/img7.jpg',
-      '/img/evento3/img8.jpg',
-      '/img/evento3/img9.jpg',
-      '/img/evento3/img10.jpg'
+      '/img/evento3/img1.JPG',
+      '/img/evento3/img2.JPG',
+      '/img/evento3/img3.JPG',
+      '/img/evento3/img4.JPG',
+      '/img/evento3/img5.JPG',
+      '/img/evento3/img6.JPG',
+      '/img/evento3/img7.JPG',
+      '/img/evento3/img8.JPG',
+      '/img/evento3/img9.JPG',
+      '/img/evento3/img10.JPG'
     ],
     description: '5 ONGs participaram (Eco-Angola, F.Kissama, Bioclub, ASO-Angola, F.Kudissanga).'
   }
