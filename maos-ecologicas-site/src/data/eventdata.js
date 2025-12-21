@@ -41,21 +41,21 @@ export const eventsData = [
   },
   {
     id: 3,
-    coverImage: '/img/evento3/capa.JPG',
+    coverImage: '/img/mussuloevento/capa.JPG',
     title: 'Actividade comunitária - Limpeza de praia',
     location: 'Mussulo, Luanda',
     date: '12 ABR 2025',
     images: [
-      '/img/evento3/img1.JPG',
-      '/img/evento3/img2.JPG',
-      '/img/evento3/img3.JPG',
-      '/img/evento3/img4.JPG',
-      '/img/evento3/img5.JPG',
-      '/img/evento3/img6.JPG',
-      '/img/evento3/img7.JPG',
-      '/img/evento3/img8.JPG',
-      '/img/evento3/img9.JPG',
-      '/img/evento3/img10.JPG'
+      '/img/mussuloevento/img1.JPG',
+      '/img/mussuloevento/img2.JPG',
+      '/img/mussuloevento/img3.JPG',
+      '/img/mussuloevento/img4.JPG',
+      '/img/mussuloevento/img5.JPG',
+      '/img/mussuloevento/img6.JPG',
+      '/img/mussuloevento/img7.JPG',
+      '/img/mussuloevento/img8.JPG',
+      '/img/mussuloevento/img9.JPG',
+      '/img/mussuloevento/img10.JPG'
     ],
     description: '5 ONGs participaram (Eco-Angola, F.Kissama, Bioclub, ASO-Angola, F.Kudissanga).'
   }
