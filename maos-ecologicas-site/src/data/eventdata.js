@@ -1,7 +1,7 @@
 export const eventsData = [
   {
     id: 1,
-    coverImage: '/img/evento1/capa.webp',
+    coverImage: '/img/evento1/capa.JPG',
     title: 'Limpeza na Floresta',
     location: 'Ilha de Luanda, Luanda',
     date: '18 JULH 2022',
