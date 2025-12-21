@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && copyfiles google134a406cc590fa8a.html dist/",
+    "build": "vite build && copyfiles google134a406cc590fa8a.html dist/ && copyfiles sitemap.xml dist/",
     "lint": "eslint .",
     "preview": "vite preview"
   },
