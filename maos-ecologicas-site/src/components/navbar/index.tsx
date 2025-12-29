@@ -39,7 +39,7 @@ const Navbar = () => {
              </li>
             </ul>
 
-            <button className={style.btnDesktop}>Comunidade</button>
+            <button className={style.btnDesktop}>Junte-se à Comunidade</button>
         </div>
 
     </div>
