@@ -7,9 +7,9 @@ import { faLeaf, faEye, faHandsHelping } from '@fortawesome/free-solid-svg-icons
 const QuemSomos = () => {
 
 const cardData = [
-  {Title: 'Missão', textBody: 'Promover a educação ambiental e a sustentabilidade, conservando a biodiversidade por meio de ações participativas que envolvem comunidades.', Icon: faLeaf},
+  {Title: 'Missão', textBody: 'Promover educação ambiental, sustentabilidade e conservar a biodiversidade através de ações participativas que envolvem e fortalecem as comunidades.', Icon: faLeaf},
   {Title: 'Visão', textBody: 'Ser um movimento transformador que influencia políticas e cria medidas para salvaguardar o ambiente e o bem-estar social dos angolanos.', Icon: faEye},
-  {Title: 'Valores', textBody: 'Sustentabilidade, Proteção da biodiversidade, Compromisso comunitário, Cultura e identidade, Transparência e responsabilidade.', Icon: faHandsHelping}
+  {Title: 'Valores', textBody: 'Sustentabilidade, Proteção e Conservação da biodiversidade, Compromisso comunitário, Cultura e identidade, Colaboraçao.', Icon: faHandsHelping}
 
 ]
 

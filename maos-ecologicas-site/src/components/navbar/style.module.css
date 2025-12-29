@@ -114,6 +114,11 @@
 /* ========================================== */
 @media (max-width: 768px) {
 
+.header_nav img {
+  width: 90px;
+  height: auto;
+}
+
   /* hamburger aparece */
   .hamburguer {
     display: flex;
